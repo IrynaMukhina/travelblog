@@ -15,15 +15,15 @@
         <p>Travel<span class="pink-color">Blog</span></p>
       </div>
       <div class="menu-wrapper flex">
-        <div role="button" tabindex="1">Blog</div>
-        <div role="button" tabindex="2">About</div>
-        <div role="button" tabindex="3">Archive</div>
-        <div role="button" tabindex="4">Contact</div>
+        <a role="button" tabindex="1" href="#blog">Blog</a>
+        <a role="button" tabindex="2" href="#about">About</a>
+        <a role="button" tabindex="3" href="#achive">Achive</a>
+        <a role="button" tabindex="4" href="#contact">Contact</a>
       </div>
       <div class="menu-icon">&#9776;</div>
     </header>
     <main class="flex">
-      <div class="post-wrapper flex">
+      <div class="post-wrapper flex" id="blog">
         <section class="post-1 flex">
           <div class="post-content flex">
             <div class="post-text">
@@ -124,6 +124,59 @@
         </article>
       </div>
     </main>
+    <div class="about-us-wrapper flex" id="about">
+      <h2 class="about-us-heading">About us</h2>
+      <p class="about-us-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et nisl id enim euismod 
+        gravida. Nullam sagittis sodales urna et scelerisque. Praesent laoreet elit posuere nisi hendrerit gravida. 
+        Vivamus sit amet ante porttitor, elementum orci sed, faucibus leo. Nullam quis dolor magna. Curabitur sed 
+        neque facilisis, semper urna ut, tincidunt augue. Vestibulum leo mi, mattis tempus lacinia at, interdum 
+        elementum libero. Curabitur molestie maximus lectus, in iaculis velit mollis sit amet. Nam justo sem, mollis 
+        vel ligula ac, vestibulum efficitur nisl.
+      </p>
+      <p class="about-us-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et nisl id enim euismod 
+        gravida. Nullam sagittis sodales urna et scelerisque. Praesent laoreet elit posuere nisi hendrerit gravida. 
+        Vivamus sit amet ante porttitor, elementum orci sed, faucibus leo. Nullam quis dolor magna. Curabitur sed 
+        neque facilisis, semper urna ut, tincidunt augue. Vestibulum leo mi, mattis tempus lacinia at, interdum 
+        elementum libero.
+        </p>
+    </div>
+    <div class="achive-wrapper flex" id="achive">
+      <div class="achive-text-wrapper">
+        <h2 class="achive-heading">Achivements</h2>
+        <p class="achive-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et nisl id enim euismod 
+          gravida. Nullam sagittis sodales urna et scelerisque. Praesent laoreet elit posuere nisi hendrerit gravida. 
+          Vivamus sit amet ante porttitor, elementum orci sed, faucibus leo. Nullam quis dolor magna. Curabitur sed 
+          neque facilisis, semper urna ut, tincidunt augue. Vestibulum leo mi, mattis tempus lacinia at, interdum 
+          elementum libero. Curabitur molestie maximus lectus, in iaculis velit mollis sit amet. Nam justo sem, mollis 
+          vel ligula ac, vestibulum efficitur nisl.
+        </p>
+      </div>
+      <img src="assets/travel-full-time.jpg" alt="Girl on the airport">
+    </div>
+    <div class="contact-us-wrapper flex" id="contact">
+      <h2 class="contact-us-heading">Contact us</h2>
+      <p class="sub-title">For any questions you may have, you can write us:</p>
+      <form action="#contact" method="get" class="form">
+        <div class="form-group form-container">
+          <div>
+            <p class="form-text">Full name *</p>
+            <input type="text" id="contact_name" name="contact_name" class="form-control" required/>
+          </div>
+          <div>
+            <p class="form-text">Email address *</p>
+            <input type="email" id="contact_email" name="contact_email" class="form-control" required/>
+          </div>
+        </div>
+        <div class="form-group">
+          <p class="form-text">Write your question below</p>
+          <textarea id="contact_message" name="contact_message" class="form-control" rows="9"
+          required></textarea>
+        </div>
+        <div>
+          <button type="submit" class="submit-btn">Send</button>
+        </div>          
+      </form>
+    </div>    
     <footer class="flex">
       <div>
         <p class="footer-text">Copyright Epam systems<br/>

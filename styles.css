@@ -41,7 +41,7 @@ header .menu-wrapper {
   width: 35%;
   justify-content: stretch;
 }
-header .menu-wrapper div {
+header .menu-wrapper a {
   display: inline;
   padding: 25px 0 25px 0;
   width: 25%;
@@ -81,12 +81,16 @@ main {
 }
 .post-text .post-heading {
   padding: 10% 10% 5% 10%;
+}
+.post-text .post-heading, .about-us-heading, .achive-heading, .contact-us-heading {
   font-weight: 200;
   font-size: 3vw;
   line-height: 1;
 }
 .blog-text {
   padding:  0 10% 10% 10%;
+}
+.blog-text, .about-us-text, .achive-text, .form-text {
   font-size: 1.2vw;
   line-height: 1.4;
   opacity: 0.8;
@@ -152,6 +156,73 @@ main {
 .travel-news img {
   width: 100%;
 }
+.about-us-wrapper {
+  background: #0D7E71;
+}
+.about-us-wrapper, .achive-text-wrapper, .contact-us-wrapper {
+  padding: 3%;
+}
+.about-us-wrapper, .achive-wrapper, .contact-us-wrapper {
+  flex-direction: column;
+  margin-bottom: 2%;
+}
+.about-us-heading, .achive-heading, .contact-us-heading {
+  padding-bottom: 2%;
+}
+.achive-wrapper {
+  background: #b1660e;
+}
+.achive-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+.contact-us-wrapper {
+  background: #4399b8;
+}
+.sub-title {
+  opacity: 80%;
+  padding-bottom: 2%;
+}
+.form-control {
+  border: none;
+  height: 30px;
+  width: 100%;
+  margin: 0 0 2% 0;
+  background:  #70b4cc;
+}
+.form-control:focus{
+  outline: 0;
+  color: #ffffff;
+  font-weight: 200;
+  padding-left: 1%;
+}
+#contact_message {
+  height: 100px;
+  resize: none;               
+}
+.form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+.form-container div {
+  width: 48%;   
+}
+.submit-btn {
+  color: #ffffff;
+  border: none;
+  font-size: 1.2vw;
+  width: 30%;
+  padding: 1%;
+  float: right;
+  background: #1f3b68;
+}
+.submit-btn:hover {
+  cursor: pointer;
+  background: rgba(31, 59, 104, 0.2);
+}
+
 footer {
   padding: 15px 30px 15px 30px;
   background: #162b4d;
@@ -204,8 +275,10 @@ footer .footer-text {
   }
   .menu-icon {
     cursor: pointer;
-    display: block;
+    display: flex;
+    align-self: center;
     padding: 20px;
+    text-align: center;
   }
   .post-wrapper {
     width:60%;
@@ -219,11 +292,14 @@ footer .footer-text {
   .post-content .post-text {
     width: 100%;
   }
-  footer .footer-text, .blog-text {
+  footer .footer-text, .blog-text, .about-us-text, .achive-text, .form-text {
     font-size: 2vw;
   }
-  .post-text .post-heading {
+  .post-text .post-heading, .about-us-heading, .achive-heading, .contact-us-heading {
     font-size: 5vw;
+  }
+  .sub-title, .submit-btn {
+    font-size: 2vw;
   }
   .post-content .post-date {
     padding: 10%;
@@ -259,13 +335,16 @@ footer .footer-text {
   .article-wrapper {
     width: 100%;
   }
-  footer .footer-text, .blog-text {
+  footer .footer-text, .blog-text, .about-us-text, .achive-text, .form-text, .sub-title, .submit-btn {
     font-size: 4vw;
   }
-  .post-text .post-heading, .post-content .post-date-day {
+  .post-text .post-heading, .post-content .post-date-day, .about-us-heading, .achive-heading, .contact-us-heading {
     font-size: 8vw;
   }
   .travel-news h3, .post-content .post-date {
     font-size: 6vw;
+  }
+  .about-us-wrapper, .achive-text-wrapper, .contact-us-wrapper {
+    padding: 10%;
   }
 }
